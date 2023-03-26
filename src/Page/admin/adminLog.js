@@ -2,7 +2,7 @@ import React from 'react'
 // import Navbar from '../../components/Homepage/Navbar';
 // import Footer from '../../components/Footer'
 import '../adminStyles/login.css'
-import Elipse from './Ellipse 2.png'
+import Elipse from '../../assets/Ellipse 2.png'
 
 const AdminLogin=()=>{
     return(
@@ -30,7 +30,7 @@ const AdminLogin=()=>{
                             <input type="text" placeholder='Enter your email address' name='email'/>
                             <label id='pass'>Password</label>
                             <input type="password" placeholder='Enter your password' />
-                            <a href="">Forgot Paswword?</a>
+                            <a href="/">Forgot Paswword?</a>
                             <button>Login</button>
                         </form>
                         <div className='signup'>

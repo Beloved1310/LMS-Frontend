@@ -40,9 +40,9 @@ export default function WithSubnavigation() {
       spacing={6}
         bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('#000000', '#000')}
-        minH={'70px'}
-        py={{ base: 4 }}
-        px={{ base: 4 }}
+        minH={'60px'}
+        // py={{ base: 0 }}
+        // px={{ base: 1 }}
         borderBottom={1}
         borderStyle={'normal'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -92,7 +92,7 @@ export default function WithSubnavigation() {
           </Button> */}
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'md'}
+            fontSize={'sm'}
             fontWeight={500}
             color={'white'}
             bg={useColorModeValue('#197DDA', '#FAD744')}
@@ -105,7 +105,7 @@ export default function WithSubnavigation() {
           <Button
             as={'a'}
             color={'#197DDA'}
-            fontSize={'md'}
+            fontSize={'sm'}
             fontWeight={500}
             variant={'outline'}
             href={'#'}>

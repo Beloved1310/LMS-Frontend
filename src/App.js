@@ -6,6 +6,7 @@ import {  BrowserRouter, BrowserRouter as Router,
    Route,  Routes, useRoutes } from 'react-router-dom';
 import CoursePostingForm from './Page/Course/Courses';
 import AdminLogin from './Page/admin/adminLog';
+import MyCourse from './Page/Course/getCourses';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={< Homepage/>} />
         <Route  path="/course" element={<CoursePostingForm />} />
         <Route path='/adminLog' element={<AdminLogin/>}/>
+        <Route path='/myCourses' element={<MyCourse/>}/>
       </Routes>
       </BrowserRouter>
       
