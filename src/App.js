@@ -4,6 +4,8 @@ import { ChakraProvider, theme } from "@chakra-ui/react";
 import Homepage from "./components/Homepage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CoursePostingForm from "./Page/Course/Courses";
+import Register from "./components/Register";
+import Login from "./components/Login";
 import Profile from "./components/Profile/Profile";
 import AdminLogin from './Page/admin/adminLog';
 
@@ -13,6 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Homepage />} />
+          <Route exact path='/register' element={<Register />} />
+          <Route exact path='/login' element={<Login />} />
           <Route exact path='/course' element={<CoursePostingForm />} />
           <Route exact path='/profile' element={<Profile />} />
           <Route path='/adminLog' element={<AdminLogin/>}/>

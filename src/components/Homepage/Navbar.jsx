@@ -91,12 +91,13 @@ export default function WithSubnavigation() {
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           </Button> */}
           <Button
+            as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'md'}
             fontWeight={500}
             color={'white'}
             bg={useColorModeValue('#197DDA', '#FAD744')}
-            href={'#contact'}
+            href={'/register'}
             _hover={{
               bg: 'blue.400',
             }}>
@@ -108,7 +109,7 @@ export default function WithSubnavigation() {
             fontSize={'md'}
             fontWeight={500}
             variant={'outline'}
-            href={'#'}>
+            href={'/login'}>
             Login
           </Button>
         </Stack>
