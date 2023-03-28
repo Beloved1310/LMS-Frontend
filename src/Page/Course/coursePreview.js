@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../components/courseSearch/myCourseNav'
+import Navbar from '../../molecules/Navbar'
 import Footer from '../../components/Footer'
 import '../../styles/coursePreview.css'
 import { useState } from 'react'
@@ -93,7 +93,7 @@ const CoursePreview =()=>{
     document.querySelector('.disc-topics').style.zIndex = '0'
     document.querySelector('.disc-rep').style.zIndex = '0'
     document.querySelector('.rply-box').style.display='none'
-  }
+}
 
   const handleTopicReply = () => {
     setShowTopicReply(true)
@@ -104,6 +104,7 @@ const CoursePreview =()=>{
     return(
         <>
             <div className='main-wrap'>
+<Navbar/>
                 <div className='post-comment' style={{ display: showPostComment ? 'flex' : 'none' }}>
                     {/* Comment on a post */}
                     <div className='cmnt-box'>
@@ -148,7 +149,6 @@ const CoursePreview =()=>{
                     </div>
                     
                 </div>
-                <Navbar/>
 
                     <div className='prvbx'>
                         <div className='side-mod'>
