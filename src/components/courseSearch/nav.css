@@ -31,10 +31,11 @@ nav{
     display: flex;
     align-items: center;
 }
-.srchbx input{
+.srchbx > input{
     border-radius: 0;
     width: 90%;
     height: 100%;
+    padding-top: 10px !important;
 }
 .srchbx button{
     width: 10%;

@@ -7,6 +7,7 @@ import {  BrowserRouter, BrowserRouter as Router,
 import CoursePostingForm from './Page/Course/Courses';
 import AdminLogin from './Page/admin/adminLog';
 import MyCourse from './Page/Course/getCourses';
+import CoursePreview from './Page/Course/coursePreview';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route  path="/course" element={<CoursePostingForm />} />
         <Route path='/adminLog' element={<AdminLogin/>}/>
         <Route path='/myCourses' element={<MyCourse/>}/>
+        <Route path='/coursePreview' element={<CoursePreview/>}/>
       </Routes>
       </BrowserRouter>
       

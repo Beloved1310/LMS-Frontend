@@ -46,18 +46,7 @@ const MyCourse =()=>{
                                 <p>Sebastein arbogast</p>
                             </div>
                             <button className='crsbtn'>Resume Course</button>
-                        </div>
-                        <div className='coursebx'>
-                        <div className='crsimg'>
-                                <img src={eth} alt="" />
-                            </div>
-                            <div className='crsttl'>
-                                <p>Ethereum and Solidity: The Complete Developer’s Guide</p>
-                            </div>
-                            <div className='crsby'>
-                                <p>Sebastein arbogast</p>
-                            </div>
-                            <button className='crsbtn'>Resume Course</button></div>    
+                        </div>  
                         <div className='coursebx'>
                         <div className='crsimg'>
                                 <img src={eth} alt="" />

@@ -9,24 +9,22 @@ body{
 }
 .main-wrap{
     width: 100%;
-    height: 100vh;
+    height: 800px !important;
     display: flex;
     flex-direction: column; 
-    justify-content: space-between; 
 }
 .box{
     width: 100%;
-    height: 65%;
-    /* background-color: grey; */
+    height: 85% !important  ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2%;
+    gap: 5%;
 }
 .courseNav{
     background-color: #197DDA;
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     align-items: end;
     padding-left: 60px;
@@ -34,10 +32,10 @@ body{
 .navbox{
     /* background-color: white; */
     width: 35%;
-    height: 85%;
+    height: 55%;
     display: flex;
     flex-direction: column;
-    gap: 15%;
+    gap: 25%;
     color: white;
 }
 .navbox p{
@@ -63,7 +61,7 @@ body{
 .coursewrp{
     /* background-color: springgreen; */
     width: 91%;
-    height: 280px;
+    height: 350px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     overflow-y: scroll;
@@ -71,11 +69,11 @@ body{
 }
 .coursebx{
     width: 75%;
-    height: 270px;
+    height: 300px;
     /* border: 1px solid grey; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 4%;
 }
 .coursewrp::-webkit-scrollbar {
   width: 8px;
@@ -98,7 +96,7 @@ body{
 }
 .crsttl{
     width: 100%;
-    height: 25%;
+    height: 20%;
     /* border: 2px solid rgb(0, 236, 138); */
     font-size: 20px;
     font-weight: 600;
