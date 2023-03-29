@@ -93,18 +93,18 @@ const CoursePreview =()=>{
     document.querySelector('.disc-topics').style.zIndex = '0'
     document.querySelector('.disc-rep').style.zIndex = '0'
     document.querySelector('.rply-box').style.display='none'
-}
+  }
 
   const handleTopicReply = () => {
-    setShowTopicReply(true)
-    document.querySelector('.main-wrap').style.cssText = 'height: 1250px !important';
-    document.querySelector('.disc-topics').style.display = 'none'
-    document.querySelector('.disc-rep').style.display = 'grid'
-  }
+      setShowTopicReply(true)
+      document.querySelector('.main-wrap').style.cssText = 'height: 1250px !important';
+      document.querySelector('.disc-topics').style.display = 'none'
+      document.querySelector('.disc-rep').style.display = 'grid'
+    }
     return(
         <>
             <div className='main-wrap'>
-<Navbar/>
+        <Navbar/>
                 <div className='post-comment' style={{ display: showPostComment ? 'flex' : 'none' }}>
                     {/* Comment on a post */}
                     <div className='cmnt-box'>

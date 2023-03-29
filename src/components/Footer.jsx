@@ -31,7 +31,7 @@ export default function LargeWithLogoLeft() {
           spacing={8}>
           <Stack spacing={4}>
           <Box display="flex" alignItems="center" >
-            <Image src={footer_logo} alt="Logo" w={150} h={50} mb={0} objectFit="contain" style={{border:'2px solid red'}}/>
+            <Image src={footer_logo} alt="Logo" w={150} h={50} mb={0} objectFit="contain" />
         </Box>
             <Text fontSize={'sm'}  mt={0} >
               © 2023 All rights reserved <br />

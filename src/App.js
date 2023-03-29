@@ -10,6 +10,7 @@ import Register from "./Page/Register/register";
 import Wrapper from "./molecules/container/Wrapper";
 import MyCourse from './Page/Course/getCourses';
 import CoursePreview from './Page/Course/coursePreview';
+import PurchaseCoursePage from "./Page/Course/purchase";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/adminLog' element={<AdminLogin/>}/>
         <Route path='/myCourses' element={<MyCourse/>}/>
         <Route path='/coursePreview' element={<CoursePreview/>}/>
+        <Route path='/purchaseCourse' element={<PurchaseCoursePage/>}/>
       </Routes>
       </BrowserRouter>
     </ChakraProvider>
