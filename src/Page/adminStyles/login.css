@@ -6,11 +6,13 @@
 body{
     /* background-color: red; */
     width: 100%;
+    /* height: 100vh; */
 }
-.main-wrap{
+.wrap{
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100vh !important;
+    display: flex !important;
+    background-color: red;
 }
 .left{
     background-color: #197DDA;
@@ -74,10 +76,10 @@ body{
 .logbox{
     /* background-color: grey; */
     width: 90%;
-    height: 65%;
+    height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .loghead{
     width: 100%;
@@ -92,6 +94,14 @@ body{
     font-size: 15px !important;
     font-weight: 400 !important;
 }
+#adfrm{
+    height: 60%;
+    /* background-color: red; */
+}
+#adfrm input{
+    height:15%
+
+}
 form{
     /* background-color: whitesmoke; */
     width: 100%;
@@ -103,14 +113,14 @@ form{
 label{
     font-weight: 500;
 }
-input{
+#adfrm input{
     border: 1px solid grey;
     outline: none;
-    padding: 13px;
+    padding: 13px !important;
     color: black !important;
     font-weight: 500;
     border-radius: 5px;
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 input::placeholder{
     color: rgb(78, 78, 78);

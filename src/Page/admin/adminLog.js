@@ -7,7 +7,7 @@ import Elipse from '../../assets/Ellipse 2.png'
 const AdminLogin=()=>{
     return(
         <>
-           <div className='main-wrap'>
+           <div className='wrap'>
                 <div className='left'>
                    <div className='lhldr'>
                         <div className='imgwrp'>
@@ -25,7 +25,7 @@ const AdminLogin=()=>{
                             <p>Log In</p>
                             <p className='logtwo'>Please, fill in details to continue</p>
                         </div>
-                        <form>
+                        <form id='adfrm'>
                             <label for="email">Email</label>
                             <input type="text" placeholder='Enter your email address' name='email'/>
                             <label id='pass'>Password</label>

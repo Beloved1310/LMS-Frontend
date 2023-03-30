@@ -11,6 +11,7 @@ import Wrapper from "./molecules/container/Wrapper";
 import MyCourse from './Page/Course/getCourses';
 import CoursePreview from './Page/Course/coursePreview';
 import PurchaseCoursePage from "./Page/Course/purchase";
+import CartPage from './Page/cart/cart';
 
 function App() {
   return (
@@ -19,10 +20,13 @@ function App() {
       <Routes>
         <Route exact path="/" element={< Homepage/>} />
         <Route  path="/course" element={<CoursePostingForm />} />
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/profile" element={<Profile/>}/>
         <Route path='/adminLog' element={<AdminLogin/>}/>
         <Route path='/myCourses' element={<MyCourse/>}/>
         <Route path='/coursePreview' element={<CoursePreview/>}/>
         <Route path='/purchaseCourse' element={<PurchaseCoursePage/>}/>
+        <Route path="/myCart" element={<CartPage/>}/>
       </Routes>
       </BrowserRouter>
     </ChakraProvider>

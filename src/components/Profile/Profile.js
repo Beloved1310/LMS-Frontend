@@ -15,7 +15,6 @@ const Profile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // Set EditProfile State to false inside of the .then() method when you start consuming the endpoints
     setEditProfile(false); // Set EditProfile State to false
   };
