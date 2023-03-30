@@ -12,6 +12,7 @@ import MyCourse from './Page/Course/getCourses';
 import CoursePreview from './Page/Course/coursePreview';
 import PurchaseCoursePage from "./Page/Course/purchase";
 import CartPage from './Page/cart/cart';
+import Checkout from './Page/cart/checkout';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/coursePreview' element={<CoursePreview/>}/>
         <Route path='/purchaseCourse' element={<PurchaseCoursePage/>}/>
         <Route path="/myCart" element={<CartPage/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
       </Routes>
       </BrowserRouter>
     </ChakraProvider>
