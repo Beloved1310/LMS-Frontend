@@ -11,8 +11,9 @@ import Wrapper from "./molecules/container/Wrapper";
 import MyCourse from './Page/Course/getCourses';
 import CoursePreview from './Page/Course/coursePreview';
 import PurchaseCoursePage from "./Page/Course/purchase";
-import CartPage from './Page/cart/cart';
-import Checkout from './Page/cart/checkout';
+import Cart from './Page/cart/cart';
+import BillingPage from './Page/cart/checkout';
+import Searched from "./Page/Course/searchResult";
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
         <Route path='/myCourses' element={<MyCourse/>}/>
         <Route path='/coursePreview' element={<CoursePreview/>}/>
         <Route path='/purchaseCourse' element={<PurchaseCoursePage/>}/>
-        <Route path="/myCart" element={<CartPage/>}/>
-        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/myCart" element={<Cart/>}/>
+        <Route path="/checkout" element={<BillingPage/>}/>
+        <Route path="/searched" element={<Searched/>}/>
       </Routes>
       </BrowserRouter>
     </ChakraProvider>
