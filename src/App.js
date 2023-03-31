@@ -14,6 +14,7 @@ import PurchaseCoursePage from "./Page/Course/purchase";
 import Cart from './Page/cart/cart';
 import BillingPage from './Page/cart/checkout';
 import Searched from "./Page/Course/searchResult";
+import NotifyPage from './Page/Course/notification';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/myCart" element={<Cart/>}/>
         <Route path="/checkout" element={<BillingPage/>}/>
         <Route path="/searched" element={<Searched/>}/>
+        <Route path="/notification" element={<NotifyPage/>}/>
       </Routes>
       </BrowserRouter>
     </ChakraProvider>
