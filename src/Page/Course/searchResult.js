@@ -18,7 +18,7 @@ const Searched =()=>{
           <div className='res-open'>
             <img src={course.img} alt="" />
             <div className='res-text'>
-              <h3>{course.title}</h3>
+              <h3 onClick={}>{course.title}</h3>
               <p>{course.instructor}</p>
               <p>{course.rating}</p>
             </div>
