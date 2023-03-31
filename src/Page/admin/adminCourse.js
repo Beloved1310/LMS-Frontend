@@ -26,14 +26,14 @@ const CourseOverview =()=>{
                                 </div>
                             </div>
                             <div className='flt-btns'>
-                                <div className='flbtn'>
+                                <button className='flbtn'>
                                     <AiOutlineReload id='apl'/>
                                    <p>Apply Filter</p>
-                                </div>
-                                <div className='flbtn' id='exp'>
+                                </button>
+                                <button className='flbtn' id='exp'>
                                     <AiFillFileText/>
                                     <p>Export Analytics</p>
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,9 @@ const CourseOverview =()=>{
                                 </div>
                             </div>
                             <div className='ad-ops'>
+                           <button>
                             <IoIosOptions/>
+                            </button>
                             </div>
                         </div>
 
@@ -93,7 +95,9 @@ const CourseOverview =()=>{
                                 </div>
                             </div>
                             <div className='ad-ops'>
+                            <button>
                             <IoIosOptions/>
+                            </button>
                             </div>
                         </div>
 
@@ -122,7 +126,9 @@ const CourseOverview =()=>{
                                 </div>
                             </div>
                             <div className='ad-ops'>
+                                <button>
                                 <IoIosOptions/>
+                                </button>
                             </div>
                         </div>
                     </div>
