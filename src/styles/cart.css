@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.cart-wrap{
+    /* background-color: springgreen; */
+    width: 100%;
+    height: 445px;
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-box{
+    /* background-color: red; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-info{
+    /* background-color: whitesmoke; */
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.info-head{
+    /* background-color: orangered; */
+    width: 15%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-head h2{
+    font-size: 35px;
+    font-weight: 550;
+}
+.info-head p{
+    font-size: 11px;
+    font-weight: 500;
+}
+.info-main{
+    width: 100%;
+    height: 310px;
+    border-top: 1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 2% 0;
+    gap: 3%;
+    overflow-y: scroll;
+    padding-right: 5px;
+}
+.info-main::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .info-main::-webkit-scrollbar-thumb {
+    background-color: #197DDA;
+    border-radius: 5px;
+    height: 20px;
+  }
+.cart-card{
+    width: 100%;
+    height: 100px;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.cart-card:hover{
+    border: 1px solid #197DDA;
+    border-radius: 6px;
+    transition: 1s;
+}
+.card-title{
+    width: 75%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+}
+.card-title img{
+    width: 25%;
+    height: 100%;
+}
+.title-text{
+    width: 65%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.crs{
+    font-weight: 645 !important;
+    font-size: 20px;
+}
+.rate{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.card-price{
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.card-price > .price{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5%;
+}
+.price p{
+    font-size: 32px;
+    color: #197DDA;
+    font-weight: 500;
+}
+.card-price > button{
+    color: red;
+    font-weight: 750;
+    /* border: 1px solid black; */
+    width: 50%;
+    font-size: 10px;
+    margin-left: 45px;
+}
+#crrncy{
+    font-size: 11px;
+    font-weight: 700 !important;
+    margin-top: 15px;
+}
+.checkbx{
+    /* background-color: grey; */
+    width: 15%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+.check-price{
+    background-color: #A6D9FF;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* gap: 3%; */
+    color: #003F6C;
+}
+#tot{
+    font-size: 10px;
+    font-weight: 600;
+}
+#price{
+    font-size: 35px;
+}
+.chkbtn{
+    background-color: #197DDA;
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: springgreen; */
+    width: 100%;
+}
+.main-wrap{
+    width: 100%;
+    height: 800px !important;
+    display: flex;
+    flex-direction: column; 
+}
+.box{
+    width: 100%;
+    height: 85% !important  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+.courseNav{
+    background-color: #197DDA;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: end;
+    padding-left: 60px;
+}
+.navbox{
+    /* background-color: white; */
+    width: 35%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    color: white;
+}
+.navbox p{
+    font-size: 35px;
+    font-weight: 500;
+}
+.filter-wrp{
+    /* background-color: springgreen; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-wrp button{
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#all{
+    border-bottom: 2px solid white;
+}
+.coursewrp{
+    /* background-color: springgreen; */
+    width: 91%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow-y: scroll;
+    gap: 4%;
+}
+.coursebx{
+    width: 75%;
+    height: 300px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.coursewrp::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.coursewrp::-webkit-scrollbar-thumb {
+  background-color: #197DDA;
+  border-radius: 5px;
+  height: 20px;
+}
+.crsimg{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid red; */
+}
+.crsimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.crsttl{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid rgb(0, 236, 138); */
+    font-size: 20px;
+    font-weight: 600;
+}
+.crsby{
+    width: 60%;
+    height: 7%;
+    /* border: 2px solid #197DDA; */
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.crsbtn{
+    border: 1px solid #197DDA;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1070c9;
+    padding: 2% 0;
+}

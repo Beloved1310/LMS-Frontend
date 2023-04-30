@@ -10,7 +10,7 @@ const Register = () => {
     
   return (
     <>
-      <div className="main-wrap">
+      <div className="wrap">
         <div className="left">
           <div className="lhldr">
             <div className="imgwrp">
@@ -28,7 +28,7 @@ const Register = () => {
               <p> Sign Up</p>
               <p className="logtwo">Please, fill in details to continue</p>
             </div>
-            <form>
+            <form id='nrmrg'>
             <label for="firstame">First Name</label>
               <input type="firstname" name="firstname" id="firstname" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-4/5 p-4" placeholder="First Name" required=""/>
               <label for="lastame">First Name</label>
@@ -40,8 +40,7 @@ const Register = () => {
               <a href="">Forgot Paswword?</a>
               <button className="w-72 text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Register</button>
             </form>
-            <div className="signup">
-            </div>
+            {/* <div className="signup"></div> */}
           </div>
         </div>
       </div>

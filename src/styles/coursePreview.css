@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.main-wrap{
+    width: 100%;
+    height: 1000px !important;
+    /* height: 1200px !important;  */
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+}
+.prvbx{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 1% 6%;
+    margin-top: 85px;
+}
+.side-mod{
+    /* background-color: #197DDA; */
+    width: 30%;
+    height: 600px;
+    visibility: hidden;
+}
+.side-mod p{
+    font-size: 23px;
+    font-weight: 630;
+    color: #197DDA;
+}
+.crscnt{
+    font-size: 10px !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
+.full-mod{
+    /* background-color: #197DDA; */
+    width: 55%;
+    height: 900px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topicsbx{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 55%;
+}
+.tpx{
+    /* background-color: red; */
+    width: 100%;
+    height: 65%;
+}
+.tpchd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 1% 0;
+}
+.tpchd > p{
+    color: black;
+}
+.tpchd > button{
+    font-size: 20px;
+}
+.subs{
+
+}
+.full-mod-img{
+    background-color: red;
+    width: 100%;
+    height: 280px;
+}
+.full-mod-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.full-mod-tabs{
+    width: 50%;
+    height: 5%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.full-mod-tabs button{
+    padding: 0 1%;
+    font-weight: 500;
+    cursor: pointer;
+}
+#ovw{
+    border-bottom: 2px solid #197DDA;
+    color: #197DDA;
+}
+.full-mod-box{
+    /* border: 1px solid black;  */
+    width: 100%;
+    height: 360px;
+    height: 550px; 
+}
+.ovwbox{
+    width: 100%;
+    height: 350px;
+}
+.discussion-forum{
+    width: 100%;
+    height: 350px;
+    /* height:545px; */
+    /* border: 1px solid black; */
+    position: relative;
+    /* display: none; */
+}
+.disc-topics{
+    /* background-color: rgb(253, 82, 2); */
+    width: 100%;
+    height: 345px;
+    position: absolute;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5%;
+    padding-right: 1%;
+    /* display: none;    */
+
+}
+.disc-topics::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .disc-topics::-webkit-scrollbar-thumb {
+    background-color: #197DDA;
+    border-radius: 5px;
+    height: 20px;
+  }
+.disc-box{
+    width: 100%;
+    height: 160px;
+    /* border: 2px solid black; */
+}
+.disc-tpc-head{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    height: 100%;
+}
+#tpc-head{
+    font-size: 20px;
+    font-weight: 630;
+    height: 30px;
+    cursor: pointer;
+    /* background-color: springgreen; */
+}
+#tpc-cmnt{
+    font-size: 14px;
+}
+
+.disc-axns{
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid rgb(52, 209, 20); */
+    display: flex;
+    justify-content: space-between;
+}
+.user{
+    /* background-color: red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    /* justify-content: space-between; */
+}
+.name-dt{
+    font-size: 10px;
+    font-weight: 650;
+}
+.cmusr{
+    font-size: 35px;
+    color: #197DDA;
+}
+.axns{
+    /* background-color: red; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.axns p{
+    font-weight: 500;
+    font-size: 12px;
+}
+.like{
+    width: 45%;
+    height: 100%;
+    /* background-color: wheat; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#lik{
+    font-size: 20px;
+    color: #197DDA;
+    cursor: pointer;
+}
+#rep{
+    font-size: 20px;
+    color: #197DDA;
+    cursor: pointer;
+}
+.reply{
+    width: 45%;
+    height: 100%;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.disc-rep{
+    /* background-color: rgb(189, 178, 24); */
+    width: 100%;
+    height: 545px;
+    position: absolute;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10%;
+    padding-right: 5%;
+    display: none;
+}
+.disc-rep::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.disc-rep::-webkit-scrollbar-thumb {
+    background-color: #197DDA;
+    border-radius: 5px;
+    height: 20px;
+}
+.rpl-head{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.rpl-head p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.rpl-head > button{
+    border: 1px solid #197DDA;
+    font-size: 12px;
+    color: #197DDA;
+    border-radius: 5px;
+    padding: 1% 2%;
+    font-weight: 500;
+}
+.rpl-head > button:hover{
+    background-color: #197DDA;
+    color: white;
+    transition: 1s;
+}
+#comments{
+    /* border: 2px dashed blue; */
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.post-comment{
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    background-color: rgba(121, 119, 119, 0.603);
+    backdrop-filter: blur(3px);
+    padding-top: 8%;
+    display: none;
+}
+.cmnt-box{
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    padding: 2%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.cmnt-box form{
+    /* background-color: red; */
+    height: 85%;
+}
+.cmnt-box p{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#forum{
+    margin-top: 10px;
+}
+input{
+    height: 60%;
+    padding-top: 0 !important;
+}
+select{
+    border: 1px solid black;
+    padding: 2% 2%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+form button{
+    width: 50%;
+    font-size: 12px;
+}
+#close{
+    font-size: 18px;
+    /* font-weight: 900; */
+    text-align: end;
+}
+
+.rply-box{
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.rply-box form{
+    /* background-color: red; */
+    height: 85%;
+}
+.rply-box p{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.rvw-box{
+    background-color: white;
+    width: 35%;
+    height: 40%;
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.rvw-box form{
+    /* background-color: red; */
+    height: 85%;
+}
+.rvw-box p{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.disc-rev{
+      /* background-color: rgb(253, 82, 2); */
+      width: 100%;
+      height: 345px;
+      position: absolute;
+      overflow-y: scroll;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 5%;
+      padding-right: 1%;
+      justify-items: start;
+      /* z-index: 1; */
+      display: none; 
+}
+.rev-box{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disc-rev button{
+    border: 1px solid #197DDA;
+    padding: 1% 3%;
+    border-radius: 5px;
+    color: #197DDA;
+    font-size: 11px;
+    font-weight: 500;
+}
+.disc-rev > button:hover{
+    background-color: #197DDA;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.disc-rev::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.disc-rev::-webkit-scrollbar-thumb {
+    background-color: #197DDA;
+    border-radius: 5px;
+    height: 20px;
+}
+.rev-user{
+    box-shadow: 2px 2px 5px rgb(223, 222, 222);
+    width: 12%;
+    height: 90%;
+    border-radius: 100%; 
+}
+.rev{
+    /* background-color: red; */
+    width: 81%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stars{
+    /* background-color: springgreen; */
+    width: 25%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(230, 230, 230);
+}
+#revusr{
+    font-weight: 600;
+}
+#review{
+    font-size: 10px;
+}

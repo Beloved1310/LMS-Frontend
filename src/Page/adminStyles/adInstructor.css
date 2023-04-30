@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.ad-crs-wrp{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+.ad-crs-head{
+    width: 85%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ad-crs-head p{
+    color: #197DDA;
+    font-size: 25px;
+    font-weight: 600;
+}
+.ad-tabs{
+    /* background-color: whitesmoke; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.flt-info{
+    width: 65%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.shwng{
+    /* background-color: rgb(187, 255, 0); */
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shwng p,.srtby p{
+    color: black;
+    font-size: 11px;
+}
+.shwng input,.srtby input{
+    /* border: 1px solid rgb(194, 194, 194); */
+    padding: 0 2%;
+}
+input::placeholder{
+    font-weight: 400 !important;
+    font-size: 13px;
+}
+.srtby{
+    /* background-color: rgb(179, 255, 0); */
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flt-btns{
+    width: 25%;
+    height: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.flbtn{
+    border: 2px solid #197DDA;
+    height: 60%;
+    width: 45%;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+#apl{
+    color: #197DDA;
+    cursor: pointer;
+}
+.flbtn p{
+    font-size: 12px !important;
+    color: #197DDA;
+}
+#exp{
+    color: white !important;
+    background-color: #197DDA;
+    cursor: pointer;
+}
+#exp p{
+    color: white;
+}
+.ad-main-std{
+    width: 85%;
+    height: 70%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
